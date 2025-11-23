@@ -53,7 +53,7 @@ def run_pipeline():
     api = HfApi(token=HF_TOKEN)
     repo_id = "Vishnu-J-S/estimator-model"
 
-    #api.create_repo(repo_id, repo_type="model", exist_ok=True)
+    api.create_repo(repo_id, repo_type="model", exist_ok=True)
 
     api.upload_file(
         path_or_fileobj="estimator_model.joblib",
