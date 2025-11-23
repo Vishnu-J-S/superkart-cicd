@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import mean_squared_error, r2_score
 from xgboost import XGBRegressor
-from huggingface_hub import HfApi
+from huggingface_hub import HfApi, login
 import os
 
 def run_pipeline():
