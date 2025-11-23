@@ -50,7 +50,6 @@ def run_pipeline():
     print("Model and encoders saved locally")
     
     HF_TOKEN = os.getenv("HF_TOKEN")
-    login(token=HF_TOKEN)
     api = HfApi(token=HF_TOKEN)
     repo_id = "Vishnu-J-S/estimator-model"
 
