@@ -38,7 +38,7 @@ def run_pipeline():
     best_xgb = grid_search.best_estimator_
     y_pred = best_xgb.predict(X_test)
     
-    rmse = mean_squared_error(y_test, y_pred, squared=False)
+    rmse = mean_squared_error(y_test, y_pred)
     r2 = r2_score(y_test, y_pred)
 
     print("Best XGB Params:", grid_search.best_params_)
