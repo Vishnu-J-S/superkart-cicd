@@ -48,8 +48,9 @@ def run_pipeline():
     joblib.dump(best_xgb, "estimator_model.joblib")
     
     print("Model and encoders saved locally")
-
+    
     HF_TOKEN = os.getenv("HF_TOKEN")
+    login(token=HF_TOKEN)
     api = HfApi(token=HF_TOKEN)
     repo_id = "Vishnu-J-S/estimator-model"
 
