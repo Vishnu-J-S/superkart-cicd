@@ -34,7 +34,7 @@ def run_pipeline():
         n_jobs=-1,
         verbose=1
     )
-
+    grid_search.fit(X_train, y_train)
     best_xgb = grid_search.best_estimator_
     y_pred = best_xgb.predict(X_test)
     
