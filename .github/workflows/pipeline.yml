@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install dill==0.3.8 uvicorn==0.38.0 pandas==2.2.2 scikit-learn==1.6.1 joblib==1.5.2 xgboost==3.1.1 huggingface-hub==0.36.0
+        pip install dill==0.3.8 uvicorn==0.38.0 pandas==2.2.2 scikit-learn==1.6.1 joblib==1.5.2 xgboost==3.1.1 huggingface-hub==0.36.0 datasets
 
     - name: Run Pipeline Script
       env:
